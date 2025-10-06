@@ -1,7 +1,7 @@
-# Node dependencies
-/node_modules/
+# Node modules
+node_modules/
 
-# Environment files (do NOT commit secrets)
+# Environment variables
 .env
 .env.* 
 
@@ -12,61 +12,13 @@ yarn-error.log*
 logs/
 *.log
 
-# Runtime files
-pids/
-*.pid
-*.seed
-*.pid.lock
-
-# OS files
+# Optional OS files
 .DS_Store
 Thumbs.db
 
-# Editor directories and files
-.vscode/
-.idea/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
+# Optional build folders (if you ever build frontend or other)
+dist/
+build/
 
-# Build output
-/dist
-/build
-/out
-/.next
-/.nuxt
-
-# Test / coverage
-/coverage
-/.nyc_output
-
-# Temporary files
-tmp/
-temp/
-*.tmp
-
-# Misc
-*.local
-*.env.local
-
-# Ignore IDE specific workspace settings
-*.code-workspace
-
-# MacOS finder attributes
-.AppleDouble
-.LSOverride
-
-# Sensitive files sometimes present in projects
-.secrets/
-secret-*.json
-
-# If using Docker
-docker-compose.override.yml
-
-# Ignore database files (if any local db files exist)
-*.sqlite
-*.db
-
-# Prevent committing generated swagger, compiled assets, etc.
-swagger-output.json
+# SSL certificates (if you kept them locally for HTTPS)
+ssl/

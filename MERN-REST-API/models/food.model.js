@@ -12,7 +12,7 @@ const foodSchema = new mongoose.Schema({
         required: true
     },
 }, {
-    timestamps: true //createdAt + updatedAt
+    timestamps: true //createdAt + updatedAt freeCodeCamp.org (2024)
 });
 
 const Food = mongoose.model("Food", foodSchema);
