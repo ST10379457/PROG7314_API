@@ -11,6 +11,10 @@ const foodSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
+    userID:{
+        type: String,
+        required: true
+    }
 }, {
     timestamps: true //createdAt + updatedAt freeCodeCamp.org (2024)
 });

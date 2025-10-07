@@ -30,7 +30,7 @@ app.get("/api/foods", async (req, res) => {
 app.post("/api/addFood", async (req, res) => {
     const food = req.body;
 
-    if (!food.name || !food.calories) {
+    if (!food.name || !food.calories || !food.userID) {
         return res.status(400).json({ success: false, message: "Please provide all fields" });
     }
 
